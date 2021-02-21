@@ -4,11 +4,11 @@ How to use this cli tool to generate a new Kotlin React Native application?
 
 **Using npm:**
 
-`npm install -g create-ojaynico-krn`
+`npm install -g @ojaynico/create-ojaynico-krn`
 
 **Using yarn**
 
-`yarn global add create-ojaynico-krn`
+`yarn global add @ojaynico/create-ojaynico-krn`
 
 **Afterwards you will be able to consume it in via:**
 
@@ -17,9 +17,9 @@ How to use this cli tool to generate a new Kotlin React Native application?
 
 ## Or as a project specific dependency:
 
-`npx create-ojaynico-krn ProjectName`
+`npx @ojaynico/create-ojaynico-krn ProjectName`
 
-`yarn create-ojaynico-krn ProjectName`
+`yarn @ojaynico/create-ojaynico-krn ProjectName`
 
 ### After creating a new project, use the following steps to run the application.
 
