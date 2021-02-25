@@ -41,3 +41,11 @@ How to use this cli tool to generate a new Kotlin React Native application?
 - Choose either npm or yarn to run your scripts.
 - Make Sure your environment is set up for React Native development according to their documentation.
 - In case of any missing modules from kotlin, the commands 'yarn run gradleAssemble' OR 'npm run gradleAssemble' might fix them.
+
+**Example projects can be found in the links below:**
+
+https://github.com/ojaynico/KotlinReactNativeApp
+
+https://github.com/ojaynico/KotlinReactNativeNavigation
+
+https://github.com/ojaynico/KotlinReactNativeLoginSignup
