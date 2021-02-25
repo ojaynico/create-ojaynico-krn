@@ -26,8 +26,16 @@ How to use this cli tool to generate a new Kotlin React Native application?
 1. cd ProjectName
 2. Install dependencies using `yarn install` OR `npm install`
 3. Assemble your kotlin module using `yarn run gradleAssemble` OR `npm run gradleAssemble`
+   
+   **NOTE**: The above two commands will run when gradle is installed on your system.
+   
+   If it fails you can run the following commands inside shared directory.
+   
+   `cd shared`
+   
+   `./gradlew assemble`
 4. Bundle the React Native application by running `yarn run start` OR `npm run start`
-4. Run app on android or ios using `yarn/npm run android` OR `yarn/npm run ios`
+5. Run app on android or ios using `yarn/npm run android` OR `yarn/npm run ios`
 
 **NOTE**: 
 - Choose either npm or yarn to run your scripts.
