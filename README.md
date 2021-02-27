@@ -33,7 +33,7 @@ How to use this cli tool to generate a new Kotlin React Native application?
    
    `cd shared`
    
-   `./gradlew assemble`
+   `./gradlew assemble` OR `gradlew assemble` on Windows
 4. Bundle the React Native application by running `yarn run start` OR `npm run start`
 5. Run app on android or ios using `yarn/npm run android` OR `yarn/npm run ios`
 
