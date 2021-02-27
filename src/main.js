@@ -46,10 +46,9 @@ export async function createProject(options) {
         targetDirectory: options.targetDirectory || process.cwd(),
     };
 
-    const currentFileUrl = import.meta.url;
-    const templateDir = path.resolve(
-        new URL(currentFileUrl).pathname,
-        '../../template'
+    const templateDir = path.join(
+        __dirname,
+        '../template'
     );
     options.templateDirectory = templateDir;
 
