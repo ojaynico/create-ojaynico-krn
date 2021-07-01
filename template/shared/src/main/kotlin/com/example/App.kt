@@ -4,6 +4,7 @@ import ojaynico.kotlin.react.*
 import ojaynico.kotlin.react.native.AppRegistry
 import react.*
 
+@JsExport
 class App : RComponent<RProps, RState>() {
     override fun RBuilder.render() {
         statusBar {

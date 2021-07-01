@@ -164,6 +164,14 @@ export async function createProject(options) {
         resultString = dataFile.replace(needleProjectName, options.name);
         fs.writeFileSync(options.targetDirectory + '/ios/KotlinReactNativeStarter-tvOS/Info.plist', resultString, 'utf8');
 
+        dataFile = fs.readFileSync(options.targetDirectory + '/ios/KotlinReactNativeStarter/AppDelegate.m', 'utf-8');
+        resultString = dataFile.replace(needleProjectName, options.name);
+        fs.writeFileSync(options.targetDirectory + '/ios/KotlinReactNativeStarter/AppDelegate.m', resultString, 'utf8');
+
+        dataFile = fs.readFileSync(options.targetDirectory + '/ios/KotlinReactNativeStarter.xcodeproj/xcshareddata/xcschemes/KotlinReactNativeStarter.xcscheme', 'utf-8');
+        resultString = dataFile.replace(needleProjectName, options.name);
+        fs.writeFileSync(options.targetDirectory + '/ios/KotlinReactNativeStarter.xcodeproj/xcshareddata/xcschemes/KotlinReactNativeStarter.xcscheme', resultString, 'utf8');
+
         dataFile = fs.readFileSync(options.targetDirectory + '/ios/KotlinReactNativeStarter.xcodeproj/xcshareddata/xcschemes/KotlinReactNativeStarter-tvOS.xcscheme', 'utf-8');
         resultString = dataFile.replace(needleProjectName, options.name);
         fs.writeFileSync(options.targetDirectory + '/ios/KotlinReactNativeStarter.xcodeproj/xcshareddata/xcschemes/KotlinReactNativeStarter-tvOS.xcscheme', resultString, 'utf8');
