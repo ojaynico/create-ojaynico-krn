@@ -20,37 +20,37 @@ class App : RComponent<RProps, RState>() {
                     view {
                         attrs.style = styles.sectionContainer
                         text("Step One") {
-                            style = styles.sectionTitle
+                            attrs.style = styles.sectionTitle
                         }
                         text("Edit App.kt to change this screen, run 'yarn run gradleAssemble' OR 'npm run gradleAssemble' and then come back to see your edits.") {
-                            style = styles.sectionDescription
+                            attrs.style = styles.sectionDescription
                         }
                     }
                     view {
                         attrs.style = styles.sectionContainer
                         text("See Your Changes") {
-                            style = styles.sectionTitle
+                            attrs.style = styles.sectionTitle
                         }
                         text("Double tap R on your keyboard to reload your app's code.") {
-                            style = styles.sectionDescription
+                            attrs.style = styles.sectionDescription
                         }
                     }
                     view {
                         attrs.style = styles.sectionContainer
                         text("Debug") {
-                            style = styles.sectionTitle
+                            attrs.style = styles.sectionTitle
                         }
                         text("Press Cmd or Ctrl + M or Shake your device to open the React Native debug menu.") {
-                            style = styles.sectionDescription
+                            attrs.style = styles.sectionDescription
                         }
                     }
                     view {
                         attrs.style = styles.sectionContainer
                         text("Learn More") {
-                            style = styles.sectionTitle
+                            attrs.style = styles.sectionTitle
                         }
                         text("Read the docs to discover what to do next:") {
-                            style = styles.sectionDescription
+                            attrs.style = styles.sectionDescription
                         }
                     }
                     view {
@@ -62,10 +62,10 @@ class App : RComponent<RProps, RState>() {
                             touchableOpacity {
                                 attrs.style = styles.linkContainer
                                 text(link.title) {
-                                    style = styles.link
+                                    attrs.style = styles.link
                                 }
                                 text(link.description) {
-                                    style = styles.description
+                                    attrs.style = styles.description
                                 }
                             }
                         }
@@ -84,7 +84,7 @@ val Header = functionalComponent<RProps> {
         attrs.imageStyle = styles.logo
 
         text("Welcome to React and Kotlin") {
-            style = styles.text
+            attrs.style = styles.text
         }
     }
 
