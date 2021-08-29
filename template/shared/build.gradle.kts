@@ -1,5 +1,5 @@
 plugins {
-    kotlin("js") version "1.5.20"
+    kotlin("js") version "1.5.30"
 }
 
 group = "org.example"
@@ -11,9 +11,9 @@ repositories {
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlin-wrappers:kotlin-react:17.0.2-pre.213-kotlin-1.5.20")
-    implementation("org.jetbrains.kotlin-wrappers:kotlin-extensions:1.0.1-pre.213-kotlin-1.5.20")
-    implementation("com.github.ojaynico:ojaynico-kotlin-react-native:1.1.4")
+    implementation("org.jetbrains.kotlin-wrappers:kotlin-react:17.0.2-pre.236-kotlin-1.5.30")
+    implementation("org.jetbrains.kotlin-wrappers:kotlin-extensions:1.0.1-pre.236-kotlin-1.5.30")
+    implementation("com.github.ojaynico:ojaynico-kotlin-react-native:1.1.5")
 }
 
 kotlin {

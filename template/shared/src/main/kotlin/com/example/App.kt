@@ -5,7 +5,7 @@ import ojaynico.kotlin.react.native.AppRegistry
 import react.*
 
 @JsExport
-class App : RComponent<RProps, RState>() {
+class App : RComponent<Props, State>() {
     override fun RBuilder.render() {
         statusBar {
             barStyle = "dark-content"
@@ -77,7 +77,7 @@ class App : RComponent<RProps, RState>() {
 
 }
 
-val Header = functionalComponent<RProps> {
+val Header = functionalComponent<Props> {
     imageBackground {
         attrs.source = kotlinext.js.require("./resources/logo.png")
         attrs.style = styles.background

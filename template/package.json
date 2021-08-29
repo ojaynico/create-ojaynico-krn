@@ -13,9 +13,9 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "kotlin": "1.5.20",
+    "kotlin": "1.5.30",
     "react": "^17.0.2",
-    "react-native": "^0.64.2"
+    "react-native": "^0.65.1"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
@@ -25,6 +25,7 @@
     "eslint": "^7.28.0",
     "jest": "^27.0.6",
     "metro-react-native-babel-preset": "^0.66.0",
+    "react-native-codegen": "^0.0.7",
     "react-test-renderer": "17.0.2"
   },
   "jest": {
