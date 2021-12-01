@@ -17,8 +17,7 @@ dependencies {
 }
 
 kotlin {
-    js {
-        IR
+    js(IR) {
         nodejs()
         useCommonJs()
         binaries.executable()
