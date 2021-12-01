@@ -1,6 +1,6 @@
 {
   "name": "@ojaynico/create-ojaynico-krn",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "A CLI to generate a Kotlin React Native Project",
   "main": "src/index.js",
   "bin": {

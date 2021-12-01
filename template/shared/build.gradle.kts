@@ -1,5 +1,5 @@
 plugins {
-    kotlin("js") version "1.5.30"
+    kotlin("js") version "1.6.0"
 }
 
 group = "org.example"
@@ -11,9 +11,9 @@ repositories {
 }
 
 dependencies {
-    implementation("org.jetbrains.kotlin-wrappers:kotlin-react:17.0.2-pre.236-kotlin-1.5.30")
-    implementation("org.jetbrains.kotlin-wrappers:kotlin-extensions:1.0.1-pre.236-kotlin-1.5.30")
-    implementation("com.github.ojaynico:ojaynico-kotlin-react-native:1.1.5")
+    implementation("org.jetbrains.kotlin-wrappers:kotlin-react:17.0.2-pre.274-kotlin-1.6.0")
+    implementation("org.jetbrains.kotlin-wrappers:kotlin-extensions:1.0.1-pre.274-kotlin-1.6.0")
+    implementation("com.github.ojaynico:ojaynico-kotlin-react-native:1.1.7")
 }
 
 kotlin {
@@ -51,4 +51,12 @@ tasks {
         finalizedBy("copyResources")
         finalizedBy("deletePackages")
     }
+}
+
+rootProject.plugins.withType<org.jetbrains.kotlin.gradle.targets.js.yarn.YarnPlugin> {
+    rootProject.the<org.jetbrains.kotlin.gradle.targets.js.yarn.YarnRootExtension>().download = false // or true for default behavior
+}
+
+rootProject.plugins.withType<org.jetbrains.kotlin.gradle.targets.js.nodejs.NodeJsRootPlugin> {
+    rootProject.the<org.jetbrains.kotlin.gradle.targets.js.nodejs.NodeJsRootExtension>().download = false // or true for default behavior
 }

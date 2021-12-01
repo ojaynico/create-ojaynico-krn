@@ -13,18 +13,18 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "kotlin": "1.5.30",
+    "kotlin": "1.6.0",
     "react": "^17.0.2",
-    "react-native": "^0.65.1"
+    "react-native": "^0.66.3"
   },
   "devDependencies": {
     "@babel/core": "^7.14.3",
     "@babel/runtime": "^7.14.0",
     "@react-native-community/eslint-config": "^2.0.0",
     "babel-jest": "^27.0.2",
-    "eslint": "^7.28.0",
+    "eslint": "^7.32.0",
     "jest": "^27.0.6",
-    "metro-react-native-babel-preset": "^0.66.0",
+    "metro-react-native-babel-preset": "^0.66.2",
     "react-native-codegen": "^0.0.7",
     "react-test-renderer": "17.0.2"
   },
