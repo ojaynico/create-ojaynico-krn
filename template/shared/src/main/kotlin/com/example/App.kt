@@ -77,7 +77,7 @@ class App : RComponent<Props, State>() {
 
 }
 
-val Header = functionalComponent<Props> {
+val Header = fc<Props> {
     imageBackground {
         attrs.source = kotlinext.js.require("./resources/logo.png")
         attrs.style = styles.background
